@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --red: #d63a25;
+    --whire: #fff;
+    --dark: #1e1c2a;
+}
+
+body {
+    color: var(--dark);
+    background: var(--whire)
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #f00c0c;
+    width: 100%;
+    background: rgb(230, 230, 230);
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.navigation .logo {
+    color: var(--dark);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+nav i {
+    cursor: pointer;
+}
+
+.logo span {
+    color: black;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.navigation ul li a {
+    color: rgba(0, 0, 0, 0.897);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.10s;
+}
+
+.navigation ul li a:hover {
+    color: #fff;
+    display: none;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.menu .bar {
+    display: flex;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--dark);
+    margin: 5px auto;
+    transition: all 0.5s;
+}
+
+.menu .bar:nth-child(1) .menu .bar:nth-child(3) {
+    background: var(--red)
+}
+
+.Home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.Home-text {
+    max-width: 37rem;
+}
+
+.Home-text .text-h4 {
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.Home-text .text-h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.Home-text p {
+    margin-bottom: 4rem;
+}
+
+.Home-btn {
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--dark);
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.Home-btn:hover {
+    background: var(--dark);
+    color: var(--whire);
+}
+
+.Home-img {
+    width: 100%;
+}
